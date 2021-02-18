@@ -1,0 +1,59 @@
+body {
+  font-family: "Open Sans", "Myriad", Helvetica, Arial, "Noto Sans JP", sans-serif;
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+.wrapper header {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 240px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.wrapper header #logo {
+  position: absolute;
+  bottom: 62px;
+  left: 0;
+  text-align: center;
+}
+
+.wrapper header #logo h1 {
+  letter-spacing: 0.5em;
+  font-weight: 100;
+}
+
+.wrapper header #logo p {
+  letter-spacing: 0.2em;
+}
+
+.wrapper header nav {
+  position: absolute;
+  bottom: 62px;
+  right: 0;
+  overflow: hidden;
+}
+
+.wrapper header nav li {
+  float: left;
+  margin-right: 48px;
+}
+
+.wrapper header nav li:last-child {
+  margin-left: 0;
+}
+
+.wrapper #mainvisual {
+  max-width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
