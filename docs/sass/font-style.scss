@@ -1,0 +1,24 @@
+@function get_vw($size, $viewport:1920){
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+@mixin fz_vw($font_size:10){
+  font-size: $font_size * 1px;
+  font-size: get_vw($font_size);
+}
+
+p {
+  @include fz_vw(14);
+}
+.entry-hero-tagline {
+  h4 {
+    @include fz_vw(24);
+  }
+  h1 {
+    @include fz_vw(93);
+  }
+  .small-intro {
+    @include fz_vw(35);
+  }
+}
