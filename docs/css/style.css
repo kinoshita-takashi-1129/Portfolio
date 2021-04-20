@@ -1,7 +1,8 @@
 body {
-  font-family: "Open Sans", "Myriad", Helvetica, Arial, "Noto Sans JP", sans-serif; }
+  font-family: "Open Sans", "Myriad", Helvetica, Arial, "Noto Sans JP", sans-serif;
+  color: #424242; }
   body a {
-    color: #000000;
+    color: #424242;
     background-color: transparent;
     text-decoration: none;
     display: inline-block; }
@@ -38,9 +39,13 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    #site #main-view-area nav ul .nuxt-link-active a {
+      color: #424242; }
     #site #main-view-area nav ul li {
       letter-spacing: 0.3rem;
       margin-right: 48px; }
+      #site #main-view-area nav ul li a {
+        color: #BDBDBD; }
     #site #main-view-area nav ul li:last-child {
       margin: 0; }
 
@@ -58,10 +63,10 @@ body {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-top: -200px; }
   #site #content #primary {
-    width: 50%;
-    margin-top: -250px; }
+    width: 50%; }
     #site #content #primary main {
       margin: 0 auto; }
       #site #content #primary main h4 {
@@ -75,12 +80,51 @@ body {
         letter-spacing: 0.082rem; }
 
 #site .content-wrapper {
-  width: 75%; }
-  #site .content-wrapper .works-layout {
-    width: 90%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+  width: 83%;
+  margin: 0 auto; }
+  #site .content-wrapper h2 {
+    font-size: 43px;
+    margin-bottom: 40px; }
+  #site .content-wrapper #works {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (4fr)[3];
+        grid-template-columns: repeat(3, 4fr);
+    grid-column-gap: 1.66%;
+    grid-row-gap: 100px; }
+    #site .content-wrapper #works .card {
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      #site .content-wrapper #works .card .card-thumbnail {
+        width: 100%; }
+      #site .content-wrapper #works .card .card-title {
+        font-size: 18px;
+        color: #555;
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5; }
+      #site .content-wrapper #works .card .card-role {
+        color: #999;
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 14px; }
+    #site .content-wrapper #works .card:hover {
+      opacity: 0.7; }
+
+footer {
+  width: 100%;
+  margin-top: 10%;
+  border-top: solid 1px #BDBDBD;
+  padding: 100px 80px; }
+  footer .footer-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 16px; }
+  footer .copyright {
+    font-size: 1.6rem; }
+  footer .caption {
+    font-size: 1.3rem;
+    color: #BDBDBD; }
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,8 @@
 body {
     font-family: "Open Sans", "Myriad", Helvetica, Arial, "Noto Sans JP", sans-serif;
+    color: #424242;
     a {
-        color: #000000;
+        color: #424242;
         background-color: transparent;
         text-decoration: none;
         display: inline-block;
@@ -29,9 +30,17 @@ body {
         nav {
             ul {
                 display: flex;
+                .nuxt-link-active {
+                    a {
+                        color: #424242;
+                    }
+                }
                 li {
                     letter-spacing: 0.3rem;
                     margin-right: 48px;
+                    a {
+                        color: #BDBDBD;
+                    }
                 }
                 li:last-child {
                     margin: 0;
@@ -45,9 +54,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: -200px;
         #primary {
             width: 50%;
-            margin-top: -250px;
             main {
                 margin: 0 auto;
                 h4 {
@@ -66,11 +75,59 @@ body {
         }
     }
     .content-wrapper {
-        width: 75%;
-        .works-layout {
-            width: 90%;
-            margin: 0 auto;
-            display: flex;
+        width: 83%;
+        margin: 0 auto;
+        h2 {
+            font-size: 43px;
+            margin-bottom: 40px;
         }
+        #works {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,4fr);
+            grid-column-gap: 1.66%;
+            grid-row-gap: 100px;
+            .card {
+                transition: 0.5s;
+                    .card-thumbnail {
+                        width: 100%;
+                    }
+                    .card-title {
+                        font-size: 18px;
+                        color: #555;
+                        margin-top: 10px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                    .card-role {
+                        color: #999;
+                        margin-top: 5px;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+            }
+            .card:hover {
+                opacity:  0.7; 
+            }
+        }
+    }
+}
+footer {
+    width: 100%;
+    margin-top: 10%;
+    border-top: solid 1px #BDBDBD;
+    padding: 100px 80px;
+    .footer-name {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-right: 16px;
+    }
+    .copyright {
+        font-size: 1.6rem;
+    }
+    .caption {
+        font-size: 1.3rem;
+        color: #BDBDBD;
     }
 }
