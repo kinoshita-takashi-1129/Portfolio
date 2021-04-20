@@ -127,4 +127,66 @@ footer {
   footer .caption {
     font-size: 1.3rem;
     color: #BDBDBD; }
+
+.work-image {
+  width: 100%;
+  margin-bottom: 80px; }
+
+.outer-moat {
+  width: 83%;
+  margin: 0 auto; }
+  .outer-moat h1 {
+    text-align: center;
+    line-height: 1.7; }
+  .outer-moat .works-year {
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    margin-top: 20px;
+    color: #9E9E9E;
+    margin-bottom: 80px; }
+  .outer-moat p {
+    margin: 0 auto;
+    width: 66.7%;
+    max-width: 793px;
+    font-size: 18px;
+    line-height: 1.7; }
+  .outer-moat dl {
+    margin: 40px auto 120px;
+    width: 66.7%;
+    max-width: 793px;
+    font-size: 18px;
+    line-height: 1.7; }
+    .outer-moat dl dt {
+      color: #9E9E9E;
+      margin-bottom: 5px; }
+    .outer-moat dl dd {
+      margin-left: 0; }
+    .outer-moat dl .work-meta {
+      margin-top: 24px; }
+    .outer-moat dl .work-post {
+      color: #9E9E9E; }
+  .outer-moat .main-post-area {
+    width: 66.7%;
+    margin: 0 auto; }
+    .outer-moat .main-post-area h2 {
+      text-align: center;
+      margin-bottom: 80px; }
+    .outer-moat .main-post-area .works-contents-area {
+      margin-bottom: 140px; }
+      .outer-moat .main-post-area .works-contents-area .works-media {
+        max-width: 1080px;
+        margin-right: auto;
+        margin-left: auto; }
+      .outer-moat .main-post-area .works-contents-area .works-description {
+        margin-top: 40px; }
+        .outer-moat .main-post-area .works-contents-area .works-description .description {
+          margin-top: 2em; }
+      .outer-moat .main-post-area .works-contents-area .works-caption {
+        margin: 8px 0 80px;
+        font-size: 14px;
+        line-height: 1.7;
+        display: block;
+        text-align: center;
+        color: #9E9E9E; }
 /*# sourceMappingURL=style.css.map */
