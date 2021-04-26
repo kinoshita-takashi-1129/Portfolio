@@ -1,3 +1,11 @@
+$sp: 480px;
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+      @content;
+    }
+  }
+
 body {
     font-family: "Open Sans", "Myriad", Helvetica, Arial, "Noto Sans JP", sans-serif;
     color: #424242;
@@ -12,19 +20,34 @@ body {
     #main-view-area {
         overflow: hidden;
         min-height: 100vh;
+        @include sp {
+            overflow: hidden;
+            min-height: auto;
+            padding: 5%;
+        }
         #site-header {
             width: 100vw;
             height: 250px;
             display: flex;
+            @include sp {
+                width: 100%;
+                height: 100px;
+            }
             .site-header-holder {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 width: 90%;
                 margin: 0 auto;
+                @include sp {
+                    width: 100%;
+                }
             }
             #logo {
                 width: 70px;
+                @include sp {
+                    width: 15%;
+                }
             }
         }
         nav {
@@ -38,6 +61,10 @@ body {
                 li {
                     letter-spacing: 0.3rem;
                     margin-right: 48px;
+                    @include sp {
+                        margin-right: 24px;
+                        font-size: 0.9rem;
+                    }
                     a {
                         color: #BDBDBD;
                     }
@@ -55,11 +82,20 @@ body {
         justify-content: center;
         align-items: center;
         margin-top: -200px;
+        @include sp {
+            height: auto;
+            margin-top: 0;
+        }
         #primary {
             width: 50%;
+            @include sp {
+                width: 100%;
+                margin: 120px 0;
+            }
             main {
                 margin: 0 auto;
                 h4 {
+                    font-size: 1.3rem;
                     font-weight: 100;
                     color: #616161;
                     margin-bottom: 8px;
@@ -70,6 +106,9 @@ body {
                 .small-intro {
                     color: #212121;
                     letter-spacing: 0.082rem;
+                    @include sp {
+                        font-size: 0.9rem;
+                    }
                 }
             }
         }
@@ -77,9 +116,16 @@ body {
     .content-wrapper {
         width: 83%;
         margin: 0 auto;
+        @include sp {
+            width: 100%;
+            padding: 5%;
+        }
         h2 {
             font-size: 43px;
             margin-bottom: 40px;
+            @include sp {
+                display: none;
+            }
         }
         #works {
             width: 100%;
@@ -87,6 +133,11 @@ body {
             grid-template-columns: repeat(3,4fr);
             grid-column-gap: 1.66%;
             grid-row-gap: 100px;
+            @include sp {
+                grid-template-columns: repeat(1,12fr);
+                grid-column-gap: 0;
+                grid-row-gap: 40px;
+            }
             .card {
                 transition: 0.5s;
                     .card-thumbnail {
@@ -99,12 +150,18 @@ body {
                         font-weight: 700;
                         font-size: 16px;
                         line-height: 1.5;
+                        @include sp {
+                            line-height: 1.2;
+                        }
                     }
                     .card-role {
                         color: #999;
                         margin-top: 5px;
                         font-weight: 400;
                         font-size: 14px;
+                        @include sp {
+                            margin: 0;
+                        }
                     }
             }
             .card:hover {
@@ -119,17 +176,29 @@ footer {
     margin-top: 10%;
     border-top: solid 1px #BDBDBD;
     padding: 100px 80px;
+    @include sp {
+        padding: 5%;
+    }
     .footer-name {
         font-size: 2rem;
         font-weight: bold;
         margin-right: 16px;
+        @include sp {
+            font-size: 1.5rem;
+        }
     }
     .copyright {
         font-size: 1.6rem;
+        @include sp {
+            font-size: 1rem;
+        }
     }
     .caption {
         font-size: 1.3rem;
         color: #BDBDBD;
+        @include sp {
+            font-size: 0.8rem;
+        }
     }
 }
 
