@@ -138,6 +138,9 @@ footer {
   .outer-moat h1 {
     text-align: center;
     line-height: 1.7; }
+  .outer-moat .works-subtxt {
+    font-weight: 400;
+    font-size: 24px; }
   .outer-moat .works-year {
     font-size: 18px;
     font-weight: 400;
@@ -171,7 +174,7 @@ footer {
     margin: 0 auto; }
     .outer-moat .main-post-area h2 {
       text-align: center;
-      margin-bottom: 80px; }
+      margin-bottom: 40px; }
     .outer-moat .main-post-area .works-contents-area {
       margin-bottom: 140px; }
       .outer-moat .main-post-area .works-contents-area .works-media {
