@@ -283,6 +283,10 @@ footer {
                 max-width: 1080px;
                 margin-right: auto;
                 margin-left: auto;
+                @include sp {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
             }
             .works-description {
                 margin-top: 40px;
