@@ -13,8 +13,7 @@ body {
   @media (max-width: 480px) {
     #site #main-view-area {
       overflow: hidden;
-      min-height: auto;
-      padding: 5%; } }
+      min-height: auto; } }
   #site #main-view-area #site-header {
     width: 100vw;
     height: 250px;
@@ -25,7 +24,8 @@ body {
     @media (max-width: 480px) {
       #site #main-view-area #site-header {
         width: 100%;
-        height: 100px; } }
+        height: 100px;
+        padding: 0 5%; } }
     #site #main-view-area #site-header .site-header-holder {
       display: -webkit-box;
       display: -webkit-flex;
@@ -87,13 +87,14 @@ body {
   @media (max-width: 480px) {
     #site #content {
       height: auto;
-      margin-top: 0; } }
+      margin-top: 0;
+      padding: 0 5%; } }
   #site #content #primary {
     width: 50%; }
     @media (max-width: 480px) {
       #site #content #primary {
         width: 100%;
-        margin: 120px 0; } }
+        margin: 80px 0; } }
     #site #content #primary main {
       margin: 0 auto; }
       #site #content #primary main h4 {
@@ -116,7 +117,7 @@ body {
   @media (max-width: 480px) {
     #site .content-wrapper {
       width: 100%;
-      padding: 5%; } }
+      padding: 0 5%; } }
   #site .content-wrapper h2 {
     font-size: 43px;
     margin-bottom: 40px; }
@@ -197,6 +198,10 @@ footer {
 .outer-moat {
   width: 83%;
   margin: 0 auto; }
+  @media (max-width: 480px) {
+    .outer-moat {
+      width: 100%;
+      padding: 0 5%; } }
   .outer-moat h1 {
     text-align: center;
     line-height: 1.7; }
@@ -212,16 +217,21 @@ footer {
     margin-bottom: 80px; }
   .outer-moat p {
     margin: 0 auto;
-    width: 66.7%;
     max-width: 793px;
     font-size: 18px;
     line-height: 1.7; }
+    @media (max-width: 480px) {
+      .outer-moat p {
+        width: 100%; } }
   .outer-moat dl {
     margin: 40px auto 120px;
     width: 66.7%;
     max-width: 793px;
     font-size: 18px;
     line-height: 1.7; }
+    @media (max-width: 480px) {
+      .outer-moat dl {
+        width: 100%; } }
     .outer-moat dl dt {
       color: #9E9E9E;
       margin-bottom: 5px; }
@@ -233,12 +243,19 @@ footer {
       color: #9E9E9E; }
   .outer-moat .main-post-area {
     width: 66.7%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 793px; }
+    @media (max-width: 480px) {
+      .outer-moat .main-post-area {
+        width: 100%; } }
     .outer-moat .main-post-area h2 {
       text-align: center;
       margin-bottom: 40px; }
     .outer-moat .main-post-area .works-contents-area {
       margin-bottom: 140px; }
+      @media (max-width: 480px) {
+        .outer-moat .main-post-area .works-contents-area {
+          margin-bottom: 80px; } }
       .outer-moat .main-post-area .works-contents-area .works-media {
         max-width: 1080px;
         margin-right: auto;
@@ -254,4 +271,147 @@ footer {
         display: block;
         text-align: center;
         color: #9E9E9E; }
+
+.tagline {
+  width: 66.7%;
+  max-width: 793px;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 120px; }
+  @media (max-width: 480px) {
+    .tagline {
+      width: 100%; } }
+  @media (max-width: 480px) {
+    .tagline p {
+      font-size: 14px; } }
+  .tagline .profile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 40px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 480px) {
+      .tagline .profile {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .tagline .profile img {
+      max-width: 140px;
+      border-radius: 50%; }
+      @media (max-width: 480px) {
+        .tagline .profile img {
+          display: block; } }
+    .tagline .profile .profile-name {
+      margin-left: 40px; }
+      @media (max-width: 480px) {
+        .tagline .profile .profile-name {
+          margin: 24px 0 0; } }
+      .tagline .profile .profile-name h1 {
+        font-size: 42px;
+        line-height: 1.2; }
+        @media (max-width: 480px) {
+          .tagline .profile .profile-name h1 {
+            font-size: 24px; } }
+      .tagline .profile .profile-name h2 {
+        font-size: 20px;
+        color: #9E9E9E;
+        font-weight: 400;
+        letter-spacing: 0.34em; }
+        @media (max-width: 480px) {
+          .tagline .profile .profile-name h2 {
+            font-size: 18px; } }
+  .tagline .profile-field dl {
+    width: 100%;
+    margin-bottom: 40px; }
+    @media (max-width: 480px) {
+      .tagline .profile-field dl dt {
+        font-size: 14px; } }
+    .tagline .profile-field dl dd {
+      display: list-item;
+      list-style-position: inside;
+      -webkit-margin-start: 0; }
+      @media (max-width: 480px) {
+        .tagline .profile-field dl dd {
+          font-size: 14px; } }
+  .tagline .career-box .autobiography {
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px; }
+  .tagline .career-box .career {
+    height: 46px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 2px solid #d8d8d8;
+    margin-bottom: 24px; }
+    @media (max-width: 480px) {
+      .tagline .career-box .career {
+        height: unset;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .tagline .career-box .career .career-left {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      @media (max-width: 480px) {
+        .tagline .career-box .career .career-left {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+      .tagline .career-box .career .career-left .career-employer {
+        width: 300px;
+        min-width: 175px;
+        font-weight: 700;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; }
+        .tagline .career-box .career .career-left .career-employer a {
+          color: #555;
+          background-color: transparent;
+          text-decoration: underline; }
+      .tagline .career-box .career .career-left .career-title {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-left: 15px; }
+        @media (max-width: 480px) {
+          .tagline .career-box .career .career-left .career-title {
+            margin: 5px 0;
+            margin-left: unset; } }
+    .tagline .career-box .career .career-right {
+      font-size: 14px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+      @media (max-width: 480px) {
+        .tagline .career-box .career .career-right {
+          margin-bottom: 20px; } }
 /*# sourceMappingURL=style.css.map */
