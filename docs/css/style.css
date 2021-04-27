@@ -260,6 +260,10 @@ footer {
         max-width: 1080px;
         margin-right: auto;
         margin-left: auto; }
+        @media (max-width: 480px) {
+          .outer-moat .main-post-area .works-contents-area .works-media {
+            margin-top: 0;
+            margin-bottom: 0; } }
       .outer-moat .main-post-area .works-contents-area .works-description {
         margin-top: 40px; }
         .outer-moat .main-post-area .works-contents-area .works-description .description {
