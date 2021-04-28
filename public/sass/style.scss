@@ -354,8 +354,8 @@ footer {
                font-weight: 400;
                letter-spacing: 0.34em;
                @include sp {
-                   letter-spacing: 0em;
-                   font-size: 14px;
+                    font-size: 14px;
+                    letter-spacing: 0em;
                }
            }
        }

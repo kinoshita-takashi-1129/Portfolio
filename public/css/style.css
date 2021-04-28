@@ -315,7 +315,8 @@ footer {
       margin-left: 40px; }
       @media (max-width: 480px) {
         .tagline .profile .profile-name {
-          margin: 24px 0 0; } }
+          margin: 24px 0 0;
+          text-align: center; } }
       .tagline .profile .profile-name h1 {
         font-size: 42px;
         line-height: 1.2; }
@@ -329,7 +330,8 @@ footer {
         letter-spacing: 0.34em; }
         @media (max-width: 480px) {
           .tagline .profile .profile-name h2 {
-            font-size: 18px; } }
+            font-size: 14px;
+            letter-spacing: 0em; } }
   .tagline .profile-field dl {
     width: 100%;
     margin-bottom: 40px; }

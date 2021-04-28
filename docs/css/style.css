@@ -330,8 +330,8 @@ footer {
         letter-spacing: 0.34em; }
         @media (max-width: 480px) {
           .tagline .profile .profile-name h2 {
-            letter-spacing: 0em;
-            font-size: 14px; } }
+            font-size: 14px;
+            letter-spacing: 0em; } }
   .tagline .profile-field dl {
     width: 100%;
     margin-bottom: 40px; }
