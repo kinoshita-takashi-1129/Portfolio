@@ -339,6 +339,7 @@ footer {
            margin-left: 40px;
            @include sp {
                margin: 24px 0 0;
+               text-align: center;
            }
            h1 {
                font-size: 42px;
@@ -353,7 +354,8 @@ footer {
                font-weight: 400;
                letter-spacing: 0.34em;
                @include sp {
-                   font-size: 18px;
+                   letter-spacing: 0em;
+                   font-size: 14px;
                }
            }
        }
